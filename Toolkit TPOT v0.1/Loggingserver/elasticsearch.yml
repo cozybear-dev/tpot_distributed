@@ -1,0 +1,17 @@
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+
+searchguard.restapi.roles_enabled: ["sg_all_access"]
+searchguard.ssl.transport.pemcert_filepath: /etc/elasticsearch/elastic.crt
+searchguard.ssl.transport.pemkey_filepath: /etc/elasticsearch/elastic.key
+searchguard.ssl.transport.pemtrustedcas_filepath: /etc/elasticsearch/rootCA.crt
+searchguard.ssl.transport.enforce_hostname_verification: false
+searchguard.ssl.http.enabled: true
+searchguard.ssl.http.pemcert_filepath: /etc/elasticsearch/elastic.crt
+searchguard.ssl.http.pemkey_filepath: /etc/elasticsearch/elastic.key
+searchguard.ssl.http.pemtrustedcas_filepath: /etc/elasticsearch/rootCA.crt
+searchguard.allow_unsafe_democertificates: false
+searchguard.allow_default_init_sgindex: true
+network.host: 0.0.0.0
+
+xpack.security.enabled: false

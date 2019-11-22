@@ -1,0 +1,11 @@
+[Unit]
+Description=Service that starts and stops logging services.
+
+[Service]
+ExecStart=/usr/bin/start_elkdocker.sh
+ExecStop=/usr/bin/stop_elkdocker.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
